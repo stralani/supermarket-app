@@ -1,7 +1,7 @@
-import React from "react";
+import { pb } from "../../pocketBase";
 
 function Main() {
-  return <div>Main</div>;
+  return <div>{pb.authStore.model && pb.authStore.model.username}</div>;
 }
 
 export default Main;
